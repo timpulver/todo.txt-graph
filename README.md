@@ -2,6 +2,8 @@
 
 *A visualization-plugin for [todo.txt](http://todotxt.com/) – a command line todo application.*  
 
+![Graph Image](https://cloud.githubusercontent.com/assets/1055819/11110492/dd8527fe-88fc-11e5-9957-2e03db505fbd.png)
+
 **todo.txt-graph** displays bar charts showing the number of completed tasks per day.  
 
 As in Jerry Seinfeld’s [don’t break the chain](http://dontbreakthechain.com/what) technique, active days will be colored green and therefore motivate you do be more productive.
