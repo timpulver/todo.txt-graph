@@ -61,6 +61,8 @@ Tested with *todo.txt* 2.10 on Mac OS X 10.11.1
 
 ## Credits
 
+Tim Pulver, 2015
+
 Code used from:  
 
 - [termgraph](https://github.com/mkaz/termgraph/blob/master/termgraph.py)
