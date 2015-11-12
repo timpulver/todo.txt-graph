@@ -20,7 +20,7 @@ cd ~/.todo.actions.d
 Then clone this repository into the folder *graph*:
 
 ```
-https://github.com/timpulver/todo.txt-graph.git graph
+git clone https://github.com/timpulver/todo.txt-graph.git graph
 ```
 
 The directory structure should look like this now:  
