@@ -3,6 +3,7 @@
 
 # Author: Tim Pulver
 # Date: 2015
+# https://github.com/timpulver/todo.txt-graph
 #
 # Visualizes the completed tasks in todo.txt with horizontal bar graphs
 # Items are coloured green when there are more than 5 completed tasks per day,
