@@ -20,7 +20,7 @@ cd ~/.todo.actions.d
 Then clone this repository into the folder *graph*:
 
 ```
-https://github.com/timpulver/todo.txt-graph.git graph
+git clone https://github.com/timpulver/todo.txt-graph.git graph
 ```
 
 The directory structure should look like this now:  
@@ -60,6 +60,8 @@ export TODOTXT_GRAPH_THRESHOLD=10
 Tested with *todo.txt* 2.10 on Mac OS X 10.11.1  
 
 ## Credits
+
+Tim Pulver, 2015
 
 Code used from:  
 

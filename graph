@@ -16,5 +16,5 @@ shift
   exit
 }
 [ "$action" = "graph" ] && {
-     python "$TODO_ACTIONS_DIR"/graph/graph.py "$TODO_DIR" $flag
+     python2 "$TODO_ACTIONS_DIR"/graph/graph.py "$TODO_DIR" $flag
 }
