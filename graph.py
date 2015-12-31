@@ -1,10 +1,9 @@
 #!/bin/sh
+# encoding: utf-8
+from __future__ import print_function
 ''''which python2 >/dev/null 2>&1 && exec python2 "$0" "$@" # '''
 ''''which python  >/dev/null 2>&1 && exec python  "$0" "$@" # '''
 ''''exec echo "Error: I can't find python anywhere"         # '''
-
-# encoding: utf-8
-
 # Author: Tim Pulver
 # Date: 2015
 # https://github.com/timpulver/todo.txt-graph
@@ -20,8 +19,6 @@
 # Params:
 #   - TODO_TXT_PATH: Where the todo.txt / done.txt file is located
 #   - NUMBER_OF_DAYS: How many days should be visualized (optional, default: 7)
-
-from __future__ import print_function
 
 import datetime
 import sys
