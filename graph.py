@@ -142,7 +142,7 @@ def main(directory, cutoffDays = 7):
     maxf = float(max)
     step = maxf / WIDTH
 
-    orderedDic = collections.OrderedDict(sorted(dic.items()))
+    orderedDic = collections.OrderedDict(reversed(sorted(dic.items())))
 
     # display graph
     print()
