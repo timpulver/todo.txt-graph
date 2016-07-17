@@ -109,6 +109,13 @@ def print_blocks(label, count, step):
     else:
         print("{:>4.0f}".format(count))
 
+# Initialize dictionary with all days to also display days
+# where no tasks were completed
+def initialize_dic(cutoffDays = 7):
+    base = datetime.datetime.today().date()
+    dic = {(base - datetime.timedelta(days=x)).isoformat() : 0
+           for x in range(0, cutoffDays)}
+    return dic
 
 # Based on Lately Addon:
 # https://github.com/emilerl/emilerl/tree/master/todo.actions.d
@@ -117,7 +124,7 @@ def main(directory, cutoffDays = 7):
     lines = f.readlines()
     today = datetime.datetime.today()
     cutoff =  today - datetime.timedelta(days=cutoffDays)
-    dic = {}
+    dic = initialize_dic(cutoffDays)
 
     for line in lines:
         m = re.match("x ([\d]{4}-[\d]{2}-[\d]{2}).*", line)
