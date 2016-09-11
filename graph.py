@@ -89,7 +89,10 @@ class Colors(object):
 # Graph based on:
 # https://github.com/mkaz/termgraph/blob/master/termgraph.py
 def print_blocks(label, count, step):
-    blocks = int(count / step)
+    # when nothing has been done, step equals 0 so the width
+    # of a single block can't be computed but also doesn't
+    # matter. hence set blocks = 0 in that case
+    blocks = int(count / step) if step > 0 else 0
     print("{}: ".format(label), end="")
     threshold = int(os.getenv('TODOTXT_GRAPH_THRESHOLD', DEFAULT_THRESHOLD))
 
