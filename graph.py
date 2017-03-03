@@ -30,6 +30,7 @@ TICK_CHAR = '■'
 DEFAULT_THRESHOLD = 5 # grey bar < DEFAULT_THRESHOLD >= green bar
 WIDTH = 60 # Graph width
 DONE = "done.txt"
+TODO = "todo.txt"
 
 # try to use xrange, which is faster
 try:
@@ -113,8 +114,11 @@ def print_blocks(label, count, step):
 # Based on Lately Addon:
 # https://github.com/emilerl/emilerl/tree/master/todo.actions.d
 def main(directory, cutoffDays = 7):
-    f = open(os.path.join(directory, DONE), 'r')
-    lines = f.readlines()
+    lines = []
+    files = [DONE, TODO]
+    for filename in files:
+        with open(os.path.join(directory, filename), 'r') as f:
+            lines.extend(f.readlines())
     today = datetime.datetime.today()
     cutoff =  today - datetime.timedelta(days=cutoffDays)
     dic = {}
