@@ -8,7 +8,6 @@ shift
 
 [ "$action" = "usage" ] && {
   echo ""
-  echo "  Visualize done tasks:"
   echo "    graph"
   echo "      Draws bar graphs visualizing the number of completed task per day."
   echo "      Optional argument (integer): number of days to visualize (default: 7)"
