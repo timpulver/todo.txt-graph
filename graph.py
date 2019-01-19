@@ -176,5 +176,5 @@ if __name__ == '__main__':
 	else:
             main(sys.argv[1], sys.argv[2])
     else:
-        print("Error: %s or %s don't exist" % (sys.argv[1], sys.argv[2]))
+        print("Error: %s or %s doesn't exist" % (sys.argv[1], sys.argv[2]))
         sys.exit(1)
