@@ -18,9 +18,9 @@ shift
 [ "$action" = "graph" ] && {
   # check if python2 is defined
   if hash python2 2>/dev/null; then
-        python2 "$TODO_ACTIONS_DIR"/graph/graph.py "$TODO_DIR" $flag
+        python2 "$TODO_ACTIONS_DIR"/graph/graph.py "$TODO_FILE" "$DONE_FILE" $flag
   else
         # use default python 
-        python "$TODO_ACTIONS_DIR"/graph/graph.py "$TODO_DIR" $flag
+        python "$TODO_ACTIONS_DIR"/graph/graph.py "$TODO_FILE" "$DONE_FILE" $flag
   fi
 }
