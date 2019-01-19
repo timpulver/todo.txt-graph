@@ -123,11 +123,11 @@ def initialize_dic(cutoffDays = 7):
 
 # Based on Lately Addon:
 # https://github.com/emilerl/emilerl/tree/master/todo.actions.d
-def main(directory, cutoffDays = 7):
+def main(todo_file, done_file, cutoffDays = 7):
     lines = []
-    files = [DONE, TODO]
+    files = [todo_file, done_file]
     for filename in files:
-        with open(os.path.join(directory, filename), 'r') as f:
+        with open(filename, 'r') as f:
             lines.extend(f.readlines())
     today = datetime.datetime.today()
     cutoff =  today - datetime.timedelta(days=cutoffDays)
@@ -166,15 +166,15 @@ def main(directory, cutoffDays = 7):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 2:
-        print("Usage: graph.py [TODO_DIR] <days back>")
+    if len(sys.argv) < 3:
+        print("Usage: graph.py [TODO_FILE] [DONE_FILE] <days back>")
         sys.exit(1)
 
-    if os.path.isdir(sys.argv[1]):
-        if len(sys.argv) is 3:
-            main(sys.argv[1], int(sys.argv[2]))
-        else:
-            main(sys.argv[1])
+    if os.path.isfile(sys.argv[1]) and os.path.isfile(sys.argv[2]):
+        if len(sys.argv) is 4:
+            main(sys.argv[1], sys.argv[2], int(sys.argv[3]))
+	else:
+            main(sys.argv[1], sys.argv[2])
     else:
-        print("Error: %s is not a directory" % sys.argv[1])
+        print("Error: %s or %s don't exist" % (sys.argv[1], sys.argv[2]))
         sys.exit(1)
