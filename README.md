@@ -61,9 +61,13 @@ In the todo.txt wiki you can find further information on the config file: [confi
 
 Tested with *todo.txt* 2.11.0 on macOS 10.14.2
 
-## Credits
+## Contributors
 
-Tim Pulver, 2015
+- [timpulver](https://github.com/timpulver)
+- [ninjapanzer](https://github.com/ninjapanzer)
+- [gabrielsimoes](https://github.com/gabrielsimoes)
+- [nareike](https://github.com/nareike)
+- [jucor](https://github.com/jucor)
 
 Code used from:  
 
