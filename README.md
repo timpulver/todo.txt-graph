@@ -48,16 +48,18 @@ todo.sh graph 123
 
 ## Threshold
 
-By default, days with less than 5 completed tasks will be considered inactive (and therefore colored grey). You can change the threshold by adding an entry to your `todo.cfg` file:  
+By default, days with less than 5 completed tasks will be considered inactive (and therefore colored grey). You can change the threshold by adding an entry to your config file (`~/.todo/config`):  
 
 ```
 # Threshold for Graph Addon
 export TODOTXT_GRAPH_THRESHOLD=10
 ```
 
+In the todo.txt wiki you can find further information on the config file: [config troubleshooting](https://github.com/todotxt/todo.txt-cli/wiki/Troubleshooting)
+
 ## Compatibility
 
-Tested with *todo.txt* 2.10 on Mac OS X 10.11.1  
+Tested with *todo.txt* 2.11.0 on macOS 10.14.2
 
 ## Credits
 
