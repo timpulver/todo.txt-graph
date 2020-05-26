@@ -171,7 +171,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     if os.path.isfile(sys.argv[1]) and os.path.isfile(sys.argv[2]):
-        if len(sys.argv) == 4: # Avoid SyntaxWarning in Python 3.8
+        if len(sys.argv) == 4: 
             main(sys.argv[1], sys.argv[2], int(sys.argv[3]))
 	else:
             main(sys.argv[1], sys.argv[2])
