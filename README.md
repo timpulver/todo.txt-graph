@@ -68,6 +68,7 @@ Tested with *todo.txt* 2.11.0 on macOS 10.14.2
 - [gabrielsimoes](https://github.com/gabrielsimoes)
 - [nareike](https://github.com/nareike)
 - [jucor](https://github.com/jucor)
+- [andycyca](https://github.com/andycyca)
 
 Code used from:  
 
