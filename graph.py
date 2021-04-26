@@ -1,6 +1,6 @@
 #!/bin/sh
 # encoding: utf-8
-from __future__ import print_function
+
 ''''which python2 >/dev/null 2>&1 && exec python2 "$0" "$@" # '''
 ''''which python  >/dev/null 2>&1 && exec python  "$0" "$@" # '''
 ''''exec echo "Error: I can't find python anywhere"         # '''
@@ -74,8 +74,8 @@ class Colors(object):
         self.disabled = False
 
     def __getattr__(self,key):
-        if key not in CCODES.keys():
-            raise AttributeError, "Colors object has no attribute '%s'" % key
+        if key not in list(CCODES.keys()):
+            raise AttributeError("Colors object has no attribute '%s'" % key)
         else:
             if self.disabled:
                 return lambda x: x
@@ -83,7 +83,7 @@ class Colors(object):
                 return lambda x: RESET + CCODES[key] + x + RESET
 
     def __dir__(self):
-        return self.__class__.__dict__.keys() + CCODES.keys()
+        return list(self.__class__.__dict__.keys()) + list(CCODES.keys())
 
 
 
@@ -149,7 +149,7 @@ def main(todo_file, done_file, cutoffDays = 7):
 
     # find out max value
     max = 0
-    for key, value in dic.iteritems():
+    for key, value in dic.items():
         if value > max:
             max = value
 
@@ -160,7 +160,7 @@ def main(todo_file, done_file, cutoffDays = 7):
 
     # display graph
     print()
-    for key, value in orderedDic.iteritems():
+    for key, value in orderedDic.items():
         print_blocks(key, value, step)
     print()
 
@@ -173,7 +173,7 @@ if __name__ == '__main__':
     if os.path.isfile(sys.argv[1]) and os.path.isfile(sys.argv[2]):
         if len(sys.argv) == 4: 
             main(sys.argv[1], sys.argv[2], int(sys.argv[3]))
-	else:
+        else:
             main(sys.argv[1], sys.argv[2])
     else:
         print("Error: %s or %s doesn't exist" % (sys.argv[1], sys.argv[2]))
