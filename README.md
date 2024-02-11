@@ -1,7 +1,5 @@
 # todo.txt-graph
 
-This is a fork to make it work with python3 in particular for MacOS Monterey.
-
 *A visualization-plugin for [todo.txt](http://todotxt.com/) – a command line todo application.*  
 
 ![Graph Image](https://cloud.githubusercontent.com/assets/1055819/11110492/dd8527fe-88fc-11e5-9957-2e03db505fbd.png)
