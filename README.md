@@ -62,6 +62,7 @@ Tested with *todo.txt* 2.11.0 on macOS 10.14.2
 
 ## Contributors
 
+- [Bassmann](https://github.com/Bassmann)
 - [timpulver](https://github.com/timpulver)
 - [ninjapanzer](https://github.com/ninjapanzer)
 - [gabrielsimoes](https://github.com/gabrielsimoes)
