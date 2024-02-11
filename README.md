@@ -1,5 +1,7 @@
 # todo.txt-graph
 
+This is a fork to make it work with python3 in particular for MacOS Monterey.
+
 *A visualization-plugin for [todo.txt](http://todotxt.com/) – a command line todo application.*  
 
 ![Graph Image](https://cloud.githubusercontent.com/assets/1055819/11110492/dd8527fe-88fc-11e5-9957-2e03db505fbd.png)
@@ -11,7 +13,6 @@ As in Jerry Seinfeld’s [don’t break the chain](http://dontbreakthechain.com/
 ## Installation
 
 `cd` into your plugins folder (see [Installing Addons](https://github.com/ginatrapani/todo.txt-cli/wiki/Creating-and-Installing-Add-ons)), e.g.:
-
 
 ```
 cd ~/.todo.actions.d
@@ -74,8 +75,3 @@ Code used from:
 
 - [termgraph](https://github.com/mkaz/termgraph/blob/master/termgraph.py)
 - [lately](https://github.com/emilerl/emilerl/)
-
-
-
-
-
